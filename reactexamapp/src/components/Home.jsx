@@ -24,7 +24,7 @@ export default function Home() {
 
     const port = window.location.port ? parseInt(window.location.port, 10) : 80;
     if (port === 5173) {
-      setEnvMessage("🎉 Congratulations! You have executed the project locally.");
+      setEnvMessage("🎉 Congratulations!You have executed the project locally.");
       setEnvColor("#4caf50");
     } else if (port >= 30000 && port <= 32767) {
       setEnvMessage("🚀 Well done! You have successfully deployed the project on Kubernetes.");
